@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: monolith-to-services-7360423
+  AWS_BUCKET: refactor-monolith-to-microservices-and-deploy-bucket
   AWS_PROFILE: default
-  AWS_REGION: eu-west-2
-  JWT_SECRET: meow
+  AWS_REGION: us-east-1
+  JWT_SECRET: FwoGZXIvYXdzEGkaDMLC6MhVeEAMagCPDyLVAb2dFSSYZqMbnMlPxUu+9azMean99nV0e6Z83Z4gKDtBx2HpWYxpB6EbTWhV7rhjJxxdhZWrcUZWIlrSVUZfgYh5IMnLn1qAucFgaSW0TjA2AYbSwgJaxCF4c4993INx3Nx4rHF5VMIYwaF7em00b+FTpWCOrR6kho8rfNdCMcPS0YgMCeb7LRCBi16iyi1A18i4w652ut4xq1kAZ2F/aZjc1JzPPJWnHKVTSvBruIN9+Ab/Rg4eC1xd4wseqMQxwaFtDUw7NnOYpz9uGX4t0N8UNmCyGSi9qNijBjItNZCnkywEXs3AxQBGrP8hCWVP/wl7PfIam5oYjdZtNoayHfVIJLXRAwL8GKgs
   POSTGRES_DB: postgres
-  POSTGRES_HOST: monolith-to-micro.cutgyxsfmk8f.eu-west-2.rds.amazonaws.com
+  POSTGRES_HOST: postgres.cvuemip0zclh.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100
 metadata:
   name: env-config

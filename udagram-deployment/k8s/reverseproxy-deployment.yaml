@@ -5,23 +5,23 @@ metadata:
     service: reverse-proxy
   name: reverse-proxy
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
         service: reverse-proxy
     spec:
       containers:
-      - image: reverse-proxy
-        name: reverse-proxy
-        imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "1024Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 8080
+        - image: nqthien041292/reverse-proxy
+          name: reverse-proxy
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "1024Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
       restartPolicy: Always
