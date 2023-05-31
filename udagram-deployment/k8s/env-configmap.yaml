@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: refactor-monolith-to-microservices-and-deploy-bucket
+  AWS_BUCKET: udacity-project3-336140079622
   AWS_PROFILE: default
   AWS_REGION: us-east-1
-  JWT_SECRET: meow
+  JWT_SECRET: hello
   POSTGRES_DB: postgres
   POSTGRES_HOST: postgres.cvuemip0zclh.us-east-1.rds.amazonaws.com
-  URL: http://a0d31c4dd1ac34240b9445581232199f-1737201988.us-east-1.elb.amazonaws.com:8100
+  URL: http://localhost:8100
 metadata:
   name: env-config
